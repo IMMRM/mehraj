@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Portfolio</title>
+
+  <script>
+    tailwind.config = { darkMode: 'class' };
+    if (localStorage.theme === 'light') {
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
+  <nav class="bg-gray-800 p-4 shadow relative">
+    <ul class="flex justify-center space-x-6 text-gray-300">
+      <li><a href="index.html" class="hover:text-white">About Me</a></li>
+      <li><a href="articles.html" class="hover:text-white">Articles</a></li>
+      <li><a href="talks.html" class="hover:text-white">Talks</a></li>
+      <li><a href="projects.html" class="hover:text-white">Projects</a></li>
+      <li><a href="bookshelf.html" class="hover:text-white">Bookshelf</a></li>
+    </ul>
+
+    <!-- Toggle Button -->
+    <div class="absolute right-4 top-4">
+      <button id="themeToggle" class="text-sm px-2 py-1 border border-gray-400 rounded text-gray-300 hover:text-white">
+        Toggle Theme
+      </button>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-4 text-white">👋 Welcome!</h1>
+    <p class="text-lg text-gray-300 leading-relaxed">
+      I’m Raj — a Data Scientist and Machine Learning Engineer passionate about solving real-world problems using AI.
+    </p>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      const root = document.documentElement;
+      if (root.classList.contains('dark')) {
+        root.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        root.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    });
+  </script>
+</body>
+</html>
