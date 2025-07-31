@@ -4,25 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Talks | Portfolio</title>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
+  
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
-    <nav class="bg-gray-800 p-4 shadow flex gap-8 justify-between align-center pr-10">
-  <div>
-    <a href="index.html" class="text-xl font-semibold text-white hover:text-blue-300">Mehraj</a>
-  </div>
-    <ul class="flex justify-center space-x-6 text-gray-300">
+  <nav class="bg-gray-800 p-4 shadow flex justify-between items-center w-full">
+    <!-- Left: Brand -->
+    <div>
+      <a href="index.html" class="text-xl font-semibold text-white hover:text-blue-300">Mehraj</a>
+    </div>
+
+    <!-- Center: Navigation -->
+    <ul class="hidden md:flex space-x-6 text-gray-300">
       <li><a href="about.html" class="hover:text-white">About Me</a></li>
       <li><a href="articles.html" class="hover:text-white">Articles</a></li>
       <li><a href="talks.html" class="hover:text-white">Talks</a></li>
       <li><a href="projects.html" class="hover:text-white">Projects</a></li>
       <li><a href="bookshelf.html" class="hover:text-white">Bookshelf</a></li>
     </ul>
+
+    <!-- Right: Social Icons -->
+    <div class="flex space-x-4 ml-6">
+      <a href="https://www.linkedin.com/in/mrmirdha" target="_blank">
+        <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn" class="h-6 w-6 hover:opacity-80">
+      </a>
+      <a href="https://github.com/yourusername" target="_blank">
+        <img src="assets/images/github.svg" alt="GitHub" class="h-6 w-6 hover:opacity-80">
+      </a>
+      <a href="https://twitter.com/yourhandle" target="_blank">
+        <img src="assets/images/twitter.svg" alt="Twitter" class="h-6 w-6 hover:opacity-80">
+      </a>
+    </div>
   </nav>
 
   <main class="max-w-3xl mx-auto p-6">
