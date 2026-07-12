@@ -1,183 +1,170 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me | Portfolio</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
-<body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Mehraj</a>
 
-  <!-- Navbar -->
-  <nav class="bg-gray-800 p-4 shadow flex justify-between items-center w-full">
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">menu</button>
 
-    <div>
-      <a href="index.html" class="text-xl font-semibold text-white hover:text-blue-300">
-        Mehraj
-      </a>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="bookshelf.html">Bookshelf</a></li>
+        <li>
+          <a href="https://marble-penguin-b36.notion.site/Dream-List-100-2ac79c1180ae801fbcfeeeb5061a0dee?source=copy_link" target="_blank" rel="noopener" class="external">Dream list</a>
+        </li>
+      </ul>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mrmirdha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/immrm" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/MehrajurRahman" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="assets/images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="mailto:mehraj.mirdha@gmail.com" aria-label="Mail">
+          <img src="assets/images/gmail.svg" alt="Mail">
+        </a>
+      </div>
     </div>
-
-    <ul class="hidden md:flex space-x-6 text-gray-300">
-      <li><a href="about.html" class="hover:text-white">About</a></li>
-      <li><a href="articles.html" class="hover:text-white">Articles</a></li>
-      <li><a href="talks.html" class="hover:text-white">Talks</a></li>
-      <li><a href="projects.html" class="hover:text-white">Projects</a></li>
-      <li><a href="bookshelf.html" class="hover:text-white">Bookshelf</a></li>
-    </ul>
-
-    <div class="flex space-x-4 ml-6">
-      <a href="https://www.linkedin.com/in/mrmirdha" target="_blank">
-        <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn" class="h-6 w-6">
-      </a>
-      <a href="https://github.com/immrm" target="_blank">
-        <img src="assets/images/github.svg" alt="GitHub" class="h-6 w-6">
-      </a>
-      <a href="https://x.com/MehrajurRahman" target="_blank">
-        <img src="assets/images/twitter.svg" alt="Twitter" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="mailto:mehraj.mirdha@gmail.com">
-        <img src="assets/images/gmail.svg" alt="Mail" class="h-6 w-6">
-      </a>
-    </div>
-
   </nav>
 
-  <!-- Main Content -->
-  <main class="max-w-3xl mx-auto p-6">
+  <main class="prose">
+    <p class="eyebrow"><span class="dim">~/</span>about <span class="dim">·</span> ai engineering <span class="dim">×</span> applied research</p>
 
-    <h1 class="text-3xl font-bold mb-4 text-white">
-      👋 Hi, I'm Mehraj
-    </h1>
+    <h1 class="display">👋 Hi, I'm Mehraj</h1>
 
-    <p class="text-gray-400 mb-6">
+    <p class="lede">
       AI Engineer focused on building intelligent systems and exploring modern machine learning research.
     </p>
 
-    <p class="text-lg text-gray-300 leading-relaxed mb-4">
-      I’m an <strong class="text-white">AI Engineer</strong> interested in building intelligent systems and understanding how modern machine learning models work under the hood.
+    <p>
+      I’m an <strong>AI Engineer</strong> interested in building intelligent systems and understanding how modern machine learning models work under the hood.
     </p>
 
-    <p class="text-lg text-gray-300 leading-relaxed mb-6">
-      My work sits at the intersection of <strong class="text-white">AI Engineering and Applied Research</strong>.
+    <p>
+      My work sits at the intersection of <strong>AI Engineering and Applied Research</strong>.
       I enjoy turning ideas from research papers into practical systems and building AI applications that interact with real-world workflows.
     </p>
 
-    <!-- Current Focus -->
-    <h2 class="text-xl font-semibold text-white mt-6 mb-3">
-      What I'm Currently Working On
-    </h2>
+    <div class="two-col">
+      <section>
+        <h2 class="section">What I'm Currently Working On</h2>
+        <ul class="tick-list">
+          <li>Building agentic AI systems</li>
+          <li>Experimenting with large language models</li>
+          <li>Implementing ideas from recent ML research papers</li>
+          <li>Designing scalable AI systems and workflows</li>
+        </ul>
+      </section>
 
-    <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6">
-      <li>Building agentic AI systems</li>
-      <li>Experimenting with large language models</li>
-      <li>Implementing ideas from recent ML research papers</li>
-      <li>Designing scalable AI systems and workflows</li>
-    </ul>
+      <section>
+        <h2 class="section">Areas of Interest</h2>
+        <ul class="tick-list">
+          <li>Machine Learning &amp; Deep Learning</li>
+          <li>Large Language Models (LLMs)</li>
+          <li>Agentic AI Systems</li>
+          <li>AI System Design</li>
+          <li>ML Experimentation &amp; Research Implementation</li>
+        </ul>
+      </section>
+    </div>
 
-    <!-- Areas -->
-    <h2 class="text-xl font-semibold text-white mt-6 mb-3">
-      Areas of Interest
-    </h2>
+    <h2 class="section">Tools &amp; Technologies</h2>
 
-    <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6">
-      <li>Machine Learning & Deep Learning</li>
-      <li>Large Language Models (LLMs)</li>
-      <li>Agentic AI Systems</li>
-      <li>AI System Design</li>
-      <li>ML Experimentation & Research Implementation</li>
-    </ul>
+    <div class="stack">
+      <div class="chip">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">
+        <span>Python</span>
+      </div>
+      <div class="chip">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="">
+        <span>PyTorch</span>
+      </div>
+      <div class="chip">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="">
+        <span>FastAPI</span>
+      </div>
+      <div class="chip">
+        <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langchain.png" alt="">
+        <span>LangChain / LangGraph</span>
+      </div>
+      <div class="chip">
+        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="">
+        <span>HuggingFace</span>
+      </div>
+      <div class="chip">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">
+        <span>Docker</span>
+      </div>
+      <div class="chip">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">
+        <span>Git</span>
+      </div>
+      <div class="chip">
+        <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/ml-flow-wordmark-dark.svg" alt="">
+        <span>MLflow</span>
+      </div>
+      <div class="chip">
+        <img src="https://avatars.githubusercontent.com/u/26076925?s=200&v=4" alt="">
+        <span>Weights &amp; Biases</span>
+      </div>
+      <div class="chip">
+        <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="">
+        <span>SQL</span>
+      </div>
+      <div class="chip">
+        <img src="https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000" alt="">
+        <span>Power BI</span>
+      </div>
+      <div class="chip">
+        <img src="https://companieslogo.com/img/orig/databricks-c40eaf44.png?t=1720244494" alt="">
+        <span>Databricks</span>
+      </div>
+    </div>
 
-    <!-- Tech Stack -->
-    <!-- Tech Stack -->
-<h2 class="text-xl font-semibold text-white mt-6 mb-4">
-  Tools & Technologies
-</h2>
-
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
-
-  <!-- Python -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-6 w-6">
-    <span class="text-gray-200">Python</span>
-  </div>
-
-  <!-- PyTorch -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="h-6 w-6">
-    <span class="text-gray-200">PyTorch</span>
-  </div>
-
-  <!-- FastAPI -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="h-6 w-6">
-    <span class="text-gray-200">FastAPI</span>
-  </div>
-
-  <!-- LangChain -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langchain.png" class="h-6 w-6">
-    <span class="text-gray-200">LangChain / LangGraph</span>
-  </div>
-
-
-  <!-- HuggingFace -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" class="h-6 w-6">
-    <span class="text-gray-200">HuggingFace</span>
-  </div>
-
-  <!-- Docker -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-6 w-6">
-    <span class="text-gray-200">Docker</span>
-  </div>
-
-  <!-- Git -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="h-6 w-6">
-    <span class="text-gray-200">Git</span>
-  </div>
-
-  <!-- MLflow -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/ml-flow-wordmark-dark.svg" class="h-6 w-6">
-    <span class="text-gray-200">MLflow</span>
-  </div>
-
-  <!-- Weights & Biases -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://avatars.githubusercontent.com/u/26076925?s=200&v=4" class="h-6 w-6 rounded">
-    <span class="text-gray-200">Weights & Biases</span>
-  </div>
-
-   <!-- SQL -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" class="h-6 w-6 rounded">
-    <span class="text-gray-200">SQL</span>
-  </div>
-
-   <!-- Power BI -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000" class="h-6 w-6 rounded">
-    <span class="text-gray-200">Power BI</span>
-  </div>
-
-   <!-- Databricks -->
-  <div class="flex items-center space-x-3 bg-gray-800 px-4 py-3 rounded-lg hover:bg-gray-700 hover:scale-105 transition transform">
-    <img src="https://companieslogo.com/img/orig/databricks-c40eaf44.png?t=1720244494" class="h-6 w-6 rounded">
-    <span class="text-gray-200">Databricks</span>
-  </div>
-
-</div>
-
-    <p class="text-lg text-gray-300 leading-relaxed">
+    <p>
       I enjoy breaking down complex ML ideas, experimenting with new approaches, and continuously improving how intelligent systems are built and deployed.
     </p>
-
   </main>
 
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="brand">Mehraj</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mrmirdha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/immrm" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/MehrajurRahman" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="assets/images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="mailto:mehraj.mirdha@gmail.com" aria-label="Mail">
+          <img src="assets/images/gmail.svg" alt="Mail">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

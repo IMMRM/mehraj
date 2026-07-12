@@ -1,66 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bookshelf | Portfolio</title>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
-  <nav class="bg-gray-800 p-4 shadow flex justify-between items-center w-full">
-    <!-- Left: Brand -->
-    <div>
-      <a href="index.html" class="text-xl font-semibold text-white hover:text-blue-300">Mehraj</a>
-    </div>
+<body>
 
-    <!-- Center: Navigation -->
-    <ul class="hidden md:flex space-x-6 text-gray-300">
-      <li><a href="about.html" class="hover:text-white">About Me</a></li>
-      <li><a href="articles.html" class="hover:text-white">Articles</a></li>
-      <li><a href="talks.html" class="hover:text-white">Talks</a></li>
-      <li><a href="projects.html" class="hover:text-white">Projects</a></li>
-      <li><a href="bookshelf.html" class="hover:text-white">Bookshelf</a></li>
-      <li>
-        <a href="https://marble-penguin-b36.notion.site/Dream-List-100-2ac79c1180ae801fbcfeeeb5061a0dee?source=copy_link" target="_blank" rel="noopener" class="hover:text-white">
-          Dream list
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Mehraj</a>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">menu</button>
+
+      <ul class="nav-links" id="site-nav">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="bookshelf.html">Bookshelf</a></li>
+        <li>
+          <a href="https://marble-penguin-b36.notion.site/Dream-List-100-2ac79c1180ae801fbcfeeeb5061a0dee?source=copy_link" target="_blank" rel="noopener" class="external">Dream list</a>
+        </li>
+      </ul>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mrmirdha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn">
         </a>
-      </li>
-    </ul>
-
-    <!-- Right: Social Icons -->
-    <div class="flex space-x-4 ml-6">
-      <a href="https://www.linkedin.com/in/mrmirdha" target="_blank">
-        <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="https://github.com/immrm" target="_blank">
-        <img src="assets/images/github.svg" alt="GitHub" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="https://x.com/MehrajurRahman" target="_blank">
-        <img src="assets/images/twitter.svg" alt="Twitter" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="mailto:mehraj.mirdha@gmail.com">
-        <img src="assets/images/gmail.svg" alt="Mail" class="h-6 w-6 hover:opacity-80">
-      </a>
+        <a href="https://github.com/immrm" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/MehrajurRahman" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="assets/images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="mailto:mehraj.mirdha@gmail.com" aria-label="Mail">
+          <img src="assets/images/gmail.svg" alt="Mail">
+        </a>
+      </div>
     </div>
   </nav>
 
-  <main class="max-w-3xl mx-auto p-6">
-    <h1 class="text-2xl font-semibold mb-4">📚 Bookshelf</h1>
-    <ul class="space-y-4 text-gray-300">
-      <li>
-        <strong class="text-white">Deep Learning — Ian Goodfellow</strong><br>
-        A foundational book that explains the theory and math behind neural networks in depth.
-      </li>
-      <li>
-        <strong class="text-white">The Almanack of Naval Ravikant</strong><br>
-        A mix of mental models, wealth-building advice, and life philosophy.
-      </li>
-      <li>
-        <strong class="text-white">Build — Tony Fadell</strong><br>
-        A practical and inspiring guide from the creator of the iPod.
-      </li>
-    </ul>
+  <main>
+    <p class="eyebrow"><span class="dim">~/</span>bookshelf <span class="dim">·</span> shape: [3]</p>
+    <h1 class="display">📚 Bookshelf</h1>
+
+    <div class="books">
+      <article class="book">
+        <h3>Deep Learning — Ian Goodfellow</h3>
+        <p>A foundational book that explains the theory and math behind neural networks in depth.</p>
+      </article>
+      <article class="book">
+        <h3>The Almanack of Naval Ravikant</h3>
+        <p>A mix of mental models, wealth-building advice, and life philosophy.</p>
+      </article>
+      <article class="book">
+        <h3>Build — Tony Fadell</h3>
+        <p>A practical and inspiring guide from the creator of the iPod.</p>
+      </article>
+    </div>
   </main>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="brand">Mehraj</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mrmirdha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/immrm" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/MehrajurRahman" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="assets/images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="mailto:mehraj.mirdha@gmail.com" aria-label="Mail">
+          <img src="assets/images/gmail.svg" alt="Mail">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

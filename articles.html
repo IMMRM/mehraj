@@ -1,62 +1,128 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Articles | Portfolio</title>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
-  <nav class="bg-gray-800 p-4 shadow flex justify-between items-center w-full">
-    <!-- Left: Brand -->
-    <div>
-      <a href="index.html" class="text-xl font-semibold text-white hover:text-blue-300">Mehraj</a>
-    </div>
+<body>
 
-    <!-- Center: Navigation -->
-    <ul class="hidden md:flex space-x-6 text-gray-300">
-      <li><a href="about.html" class="hover:text-white">About Me</a></li>
-      <li><a href="articles.html" class="hover:text-white">Articles</a></li>
-      <li><a href="talks.html" class="hover:text-white">Talks</a></li>
-      <li><a href="projects.html" class="hover:text-white">Projects</a></li>
-      <li><a href="bookshelf.html" class="hover:text-white">Bookshelf</a></li>
-      <li>
-        <a href="https://marble-penguin-b36.notion.site/Dream-List-100-2ac79c1180ae801fbcfeeeb5061a0dee?source=copy_link" target="_blank" rel="noopener" class="hover:text-white">
-          Dream list
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Mehraj</a>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">menu</button>
+
+      <ul class="nav-links" id="site-nav">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="bookshelf.html">Bookshelf</a></li>
+        <li>
+          <a href="https://marble-penguin-b36.notion.site/Dream-List-100-2ac79c1180ae801fbcfeeeb5061a0dee?source=copy_link" target="_blank" rel="noopener" class="external">Dream list</a>
+        </li>
+      </ul>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mrmirdha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn">
         </a>
-      </li>
-    </ul>
-
-    <!-- Right: Social Icons -->
-    <div class="flex space-x-4 ml-6">
-      <a href="https://www.linkedin.com/in/mrmirdha" target="_blank">
-        <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="https://github.com/immrm" target="_blank">
-        <img src="assets/images/github.svg" alt="GitHub" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="https://x.com/MehrajurRahman" target="_blank">
-        <img src="assets/images/twitter.svg" alt="Twitter" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="mailto:mehraj.mirdha@gmail.com">
-        <img src="assets/images/gmail.svg" alt="Mail" class="h-6 w-6 hover:opacity-80">
-      </a>
+        <a href="https://github.com/immrm" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/MehrajurRahman" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="assets/images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="mailto:mehraj.mirdha@gmail.com" aria-label="Mail">
+          <img src="assets/images/gmail.svg" alt="Mail">
+        </a>
+      </div>
     </div>
   </nav>
 
-  <main class="max-w-3xl mx-auto p-6">
-    <h1 class="text-2xl font-semibold mb-4">📚 Articles</h1>
-    <ul class="list-disc pl-6 space-y-2 text-gray-300">
-      <!--<li><a href="blogs/ai_in_bi.html" class="text-blue-400 hover:underline">How AI is Transforming Business Intelligence</a></li>-->
-      <li><a href="https://mehrajrahman.substack.com/p/vibes-dont-scale-a-short-honest-guide?r=35cnne" class="text-blue-400 hover:underline" target="_blank">Vibes Don't Scale: A Short, Honest Guide to AI Evals</a></li>
-      <li><a href="https://open.substack.com/pub/mehrajrahman/p/character-vs-word-vs-subword-tokenization?r=35cnne&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true" class="text-blue-400 hover:underline" target="_blank">Character vs Word vs Subword Tokenization: Why Modern LLMs Use Subwords</a></li>
-      <li><a href="https://open.substack.com/pub/mehrajrahman/p/the-beautiful-lie-how-llms-fakes?utm_campaign=post-expanded-share&utm_medium=web" class="text-blue-400 hover:underline" target="_blank">The Beautiful Lie: How LLMs Fakes Memory</a></li>
-      <li><a href="https://www.linkedin.com/pulse/simplified-deep-learning-beginners-handbook-mehrajur-rahman-mirdha-ei16c" class="text-blue-400 hover:underline" target="_blank">Simplified Deep Learning: Beginner's Handbook</a></li>
-      <li><a href="https://www.linkedin.com/pulse/easy-explanation-knn-k-nearest-neighbour-mehrajur-rahman-mirdha" class="text-blue-400 hover:underline" target="_blank">An Easy explanation of KNN (K-Nearest Neighbour)</a></li>
-      <li><a href="https://www.linkedin.com/pulse/from-randomness-rationalization-markov-decision-mdp-rahman-mirdha-1oaqe" class="text-blue-400 hover:underline" target="_blank">From Randomness to Rationalization: Markov Decision Process (MDP)</a></li>
+  <main>
+    <p class="eyebrow"><span class="dim">~/</span>articles <span class="dim">·</span> shape: [6]</p>
+    <h1 class="display">📚 Articles</h1>
 
+    <ul class="rows">
+      <!-- <li> placeholder for future articles </li> -->
+      <li>
+        <a href="https://mehrajrahman.substack.com/p/vibes-dont-scale-a-short-honest-guide?r=35cnne" target="_blank" rel="noopener">
+          <span class="idx">01</span>
+          <span class="title">Vibes Don't Scale: A Short, Honest Guide to AI Evals</span>
+          <span class="tag">substack</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://open.substack.com/pub/mehrajrahman/p/character-vs-word-vs-subword-tokenization?r=35cnne&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true" target="_blank" rel="noopener">
+          <span class="idx">02</span>
+          <span class="title">Character vs Word vs Subword Tokenization: Why Modern LLMs Use Subwords</span>
+          <span class="tag">substack</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://open.substack.com/pub/mehrajrahman/p/the-beautiful-lie-how-llms-fakes?utm_campaign=post-expanded-share&utm_medium=web" target="_blank" rel="noopener">
+          <span class="idx">03</span>
+          <span class="title">The Beautiful Lie: How LLMs Fakes Memory</span>
+          <span class="tag">substack</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/pulse/simplified-deep-learning-beginners-handbook-mehrajur-rahman-mirdha-ei16c" target="_blank" rel="noopener">
+          <span class="idx">04</span>
+          <span class="title">Simplified Deep Learning: Beginner's Handbook</span>
+          <span class="tag">linkedin</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/pulse/easy-explanation-knn-k-nearest-neighbour-mehrajur-rahman-mirdha" target="_blank" rel="noopener">
+          <span class="idx">05</span>
+          <span class="title">An Easy explanation of KNN (K-Nearest Neighbour)</span>
+          <span class="tag">linkedin</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/pulse/from-randomness-rationalization-markov-decision-mdp-rahman-mirdha-1oaqe" target="_blank" rel="noopener">
+          <span class="idx">06</span>
+          <span class="title">From Randomness to Rationalization: Markov Decision Process (MDP)</span>
+          <span class="tag">linkedin</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
     </ul>
   </main>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="brand">Mehraj</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mrmirdha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/immrm" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/MehrajurRahman" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="assets/images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="mailto:mehraj.mirdha@gmail.com" aria-label="Mail">
+          <img src="assets/images/gmail.svg" alt="Mail">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

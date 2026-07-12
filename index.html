@@ -1,58 +1,121 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | Portfolio</title>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans min-h-screen">
-  <nav class="bg-gray-800 p-4 shadow flex justify-between items-center w-full">
-    <!-- Left: Brand -->
-    <div>
-      <a href="index.html" class="text-xl font-semibold text-white hover:text-blue-300">Mehraj</a>
-    </div>
+<body>
 
-    <!-- Center: Navigation -->
-    <ul class="hidden md:flex space-x-6 text-gray-300">
-      <li><a href="about.html" class="hover:text-white">About Me</a></li>
-      <li><a href="articles.html" class="hover:text-white">Articles</a></li>
-      <li><a href="talks.html" class="hover:text-white">Talks</a></li>
-      <li><a href="projects.html" class="hover:text-white">Projects</a></li>
-      <li><a href="bookshelf.html" class="hover:text-white">Bookshelf</a></li>
-      <li>
-        <a href="https://marble-penguin-b36.notion.site/Dream-List-100-2ac79c1180ae801fbcfeeeb5061a0dee?source=copy_link" target="_blank" rel="noopener" class="hover:text-white">
-          Dream list
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Mehraj</a>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">menu</button>
+
+      <ul class="nav-links" id="site-nav">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="bookshelf.html">Bookshelf</a></li>
+        <li>
+          <a href="https://marble-penguin-b36.notion.site/Dream-List-100-2ac79c1180ae801fbcfeeeb5061a0dee?source=copy_link" target="_blank" rel="noopener" class="external">Dream list</a>
+        </li>
+      </ul>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mrmirdha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn">
         </a>
-      </li>
-    </ul>
-
-    <!-- Right: Social Icons -->
-    <div class="flex space-x-4 ml-6">
-      <a href="https://www.linkedin.com/in/mrmirdha" target="_blank">
-        <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="https://github.com/immrm" target="_blank">
-        <img src="assets/images/github.svg" alt="GitHub" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="https://x.com/MehrajurRahman" target="_blank">
-        <img src="assets/images/twitter.svg" alt="Twitter" class="h-6 w-6 hover:opacity-80">
-      </a>
-      <a href="mailto:mehraj.mirdha@gmail.com">
-        <img src="assets/images/gmail.svg" alt="Mail" class="h-6 w-6 hover:opacity-80">
-      </a>
+        <a href="https://github.com/immrm" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/MehrajurRahman" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="assets/images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="mailto:mehraj.mirdha@gmail.com" aria-label="Mail">
+          <img src="assets/images/gmail.svg" alt="Mail">
+        </a>
+      </div>
     </div>
   </nav>
 
-  <main class="max-w-3xl mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-4 text-white">👋 Welcome!</h1>
-    <p class="text-lg text-gray-300 leading-relaxed">
-      I’m Raj — a Data Scientist and Machine Learning Engineer passionate about solving real-world problems using AI. This portfolio showcases my journey through articles, talks, hands-on projects, and more.
-    </p>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow"><span class="dim">~/</span>home <span class="dim">·</span> data science <span class="dim">×</span> machine learning</p>
+        <h1 class="display">👋 Welcome!</h1>
+        <p class="lede">
+          I’m Raj — a Data Scientist and Machine Learning Engineer passionate about solving real-world problems using AI. This portfolio showcases my journey through articles, talks, hands-on projects, and more.
+        </p>
+      </div>
+
+      <figure class="portrait">
+        <img src="assets/images/profile_pic.png" alt="Portrait of Mehraj">
+      </figure>
+    </section>
+
+    <div class="loss-curve" aria-hidden="true">
+      <div class="curve-head">
+        <span>train/loss — always descending</span>
+        <span class="ok">✓ converging</span>
+      </div>
+      <svg viewBox="0 0 720 160" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs>
+          <linearGradient id="lossGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffb454" stop-opacity="0.16"/>
+            <stop offset="100%" stop-color="#ffb454" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <!-- axis -->
+        <line x1="30" y1="10" x2="30" y2="135" stroke="rgba(139,147,255,0.25)" stroke-width="1"/>
+        <line x1="30" y1="135" x2="700" y2="135" stroke="rgba(139,147,255,0.25)" stroke-width="1"/>
+        <text x="12" y="18" fill="#5d688a" font-size="10" font-family="IBM Plex Mono, monospace">loss</text>
+        <text x="662" y="152" fill="#5d688a" font-size="10" font-family="IBM Plex Mono, monospace">epoch</text>
+
+        <!-- area under curve -->
+        <path class="curve-fill" d="M30,22 C130,26 170,62 260,84 C350,106 420,112 510,120 C590,126 650,127 700,128 L700,135 L30,135 Z"/>
+
+        <!-- the descending loss curve -->
+        <path class="curve-path" d="M30,22 C130,26 170,62 260,84 C350,106 420,112 510,120 C590,126 650,127 700,128"/>
+
+        <!-- validation checkpoints -->
+        <circle class="curve-dot" cx="150" cy="43" r="3.5"/>
+        <circle class="curve-dot" cx="300" cy="92" r="3.5"/>
+        <circle class="curve-dot" cx="450" cy="115" r="3.5"/>
+        <circle class="curve-dot" cx="590" cy="125" r="3.5"/>
+        <circle class="curve-dot" cx="695" cy="128" r="3.5"/>
+      </svg>
+    </div>
   </main>
 
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="brand">Mehraj</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mrmirdha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/immrm" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub">
+        </a>
+        <a href="https://x.com/MehrajurRahman" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="assets/images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="mailto:mehraj.mirdha@gmail.com" aria-label="Mail">
+          <img src="assets/images/gmail.svg" alt="Mail">
+        </a>
+      </div>
+    </div>
+  </footer>
 
-  </script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
